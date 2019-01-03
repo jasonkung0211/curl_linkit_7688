@@ -58,6 +58,10 @@ In the Debian system, open the *Terminal* application and type the following com
         * Subtarget: `MT76x8 based boards`
         * Target Profile: `MediaTek LinkIt Smart 7688`
     * Save and exit (**use the deafult config file name without changing it**)
+    * build kmod except these,
+    ```
+    $ grep -i kmod .config | grep -v m$ | grep -v y$
+    ```
 8. Start the compilation process:
     
     ```
